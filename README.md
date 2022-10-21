@@ -9,7 +9,7 @@ QuBranch
 
 
 - QuBranch 是一款量子计算编程 IDE 软件，包括编辑、调试、量子模拟执行等功能，为量子计算编程提供一站式集成开发环境。
-- QuBranch 基于 VS Code 源码开发，以插件形式提供扩展功能，支持 mac、windows、linux 等多种平台。
+- QuBranch 基于 VS Code 源码开发，支持 mac、windows、linux 等多种平台。
 - QuBranch 结合量子编程框架 QuTrunk，可使用本机进行量子计算模拟或配置使用远程计算资源。在默认不做配置的情况下，编写的量子程序调用的是本地计算机资源。
 
 - QuBranch 内置 QuComposer 功能，进行拖拽式可视化量子编程。QuComposer 是 QuBranch 的可视化功能模块，可以同时支持图形编辑、代码编辑两种方式绘制量子电路功能，实现量子电路图与代码双侧联动。
