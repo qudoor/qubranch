@@ -1,0 +1,40 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"*": ["types/*"]
+		},
+		"module": "commonjs",
+		"target": "es2018",
+		"outDir": "./out",
+		"lib": [
+			"es6",
+			"es2018",
+			"dom",
+			"ES2019",
+			"ES2020"
+		],
+		"jsx": "react",
+		"sourceMap": true,
+		"rootDir": "src",
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": false,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": false,
+		"noImplicitOverride": false,
+		"noUnusedLocals": false, //变量未使用
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"resolveJsonModule": true,
+		"removeComments": true,
+		"useUnknownInCatchVariables": false,
+		"types": ["@types/vscode-notebook-renderer/preload"]
+	},
+	"include": [
+		"src/**/*",
+		"../../src/vscode-dts/vscode.d.ts"
+	]
+}

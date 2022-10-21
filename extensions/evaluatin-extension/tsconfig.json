@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "strict": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*", "vue-project/src/*"]
+    },
+    "outDir": "./out",
+
+    "lib": ["es2020"]
+  },
+
+  "include": ["src/*.ts"],
+  "exclude": ["node_modules", ".vscode","vue-project/node_modules"]
+}

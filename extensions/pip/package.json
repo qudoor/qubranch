@@ -1,0 +1,212 @@
+{
+  "name": "pip-manager",
+  "displayName": "Pip Manager",
+  "description": "manage python package",
+  "version": "1.1.0",
+  "publisher": "slightc",
+  "icon": "media/logo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slightc/pip-manager"
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pip-manager.removePackage",
+        "title": "%pip-manager.command.removePackage%",
+        "description": "remove python package"
+      },
+      {
+        "command": "pip-manager.packageDescription",
+        "title": "%pip-manager.command.packageDescription%",
+        "description": "show python package description"
+      },
+      {
+        "command": "pip-manager.addPackage",
+        "title": "%pip-manager.command.addPackage%",
+        "icon": "$(add)"
+      },
+      {
+        "command": "pip-manager.updatePackage",
+        "title": "%pip-manager.command.updatePackage%",
+        "icon": "$(arrow-up)"
+      },
+      {
+        "command": "pip-manager.searchPackage",
+        "title": "%pip-manager.command.searchPackage%",
+        "icon": "$(search)"
+      },
+      {
+        "command": "pip-manager.refreshPackage",
+        "title": "%pip-manager.command.refreshPackage%",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "pip-manager.copyPackageName",
+        "title": "%pip-manager.command.copyPackageName%"
+      },
+      {
+        "command": "pip-manager.installRequirements",
+        "title": "%pip-manager.command.installRequirements%"
+      },
+      {
+        "command": "pip-manager.pickPackageVersion",
+        "title": "%pip-manager.command.pickPackageVersion%"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "pip-manager.addPackage",
+          "when": "view == pip-manager-installed",
+          "group": "navigation@1"
+        },
+        {
+          "command": "pip-manager.searchPackage",
+          "when": "view == pip-manager-installed",
+          "group": "navigation@2"
+        },
+        {
+          "command": "pip-manager.refreshPackage",
+          "when": "view == pip-manager-installed",
+          "group": "navigation@3"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "pip-manager.removePackage",
+          "when": "view == pip-manager-installed"
+        },
+        {
+          "command": "pip-manager.pickPackageVersion",
+          "when": "view == pip-manager-installed"
+        },
+        {
+          "command": "pip-manager.updatePackage",
+          "when": "view == pip-manager-installed && viewItem == canUpdate"
+        },
+        {
+          "command": "pip-manager.updatePackage",
+          "when": "view == pip-manager-installed && viewItem == canUpdate",
+          "group": "inline"
+        },
+        {
+          "command": "pip-manager.packageDescription",
+          "when": "view == pip-manager-installed"
+        },
+        {
+          "command": "pip-manager.copyPackageName",
+          "when": "view == pip-manager-installed"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "pip-manager.installRequirements",
+          "when": "resourceFilename == requirements.txt"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "pip-manager.installRequirements",
+          "when": "resourceFilename == requirements.txt"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "pip-manager.installRequirements",
+          "when": "resourceFilename == requirements.txt"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "pip-manager-explorer",
+          "title": "%pip-manager.view.title%",
+          "icon": "media/dep.svg"
+        }
+      ]
+    },
+    "views": {
+      "pip-manager-explorer": [
+        {
+          "id": "pip-manager-installed",
+          "name": "%pip-manager.view.installed%"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "pip-manager-installed",
+        "contents": "%pip-manager.view.installed.wait%"
+      }
+    ],
+    "configuration": {
+      "title": "%pip-manager.view.title%",
+      "properties": {
+        "pip-manager.source": {
+          "type": "string",
+          "default": "tsinghua",
+          "enum": [
+            "pypi",
+            "tsinghua",
+            "aliyun",
+            "douban"
+          ],
+          "enumDescriptions": [
+            "https://pypi.python.org/simple",
+            "https://pypi.tuna.tsinghua.edu.cn/simple",
+            "http://mirrors.aliyun.com/pypi/simple",
+            "http://pypi.douban.com/simple"
+          ],
+          "description": "%pip-manager.config.source.description%"
+        },
+        "pip-manager.sourceCustom": {
+          "type": "string",
+          "default": "",
+          "description": "%pip-manager.config.sourceCustom.description%"
+        }
+      }
+    }
+  },
+  "extensionDependencies": [
+    "ms-python.python"
+  ],
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.47.0",
+    "@types/xml2js": "^0.4.9",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "xml2js": "^0.4.23"
+  }
+}

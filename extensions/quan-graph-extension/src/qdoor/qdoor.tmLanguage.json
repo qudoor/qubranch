@@ -1,0 +1,14 @@
+{
+	"scopeName": "source.qdoor",
+	"patterns": [{ "include": "#letter" }],
+	"fileTypes": ["qdoor"],
+	"repository": {
+		"expression": {
+			"patterns": [{ "include": "#letter" }]
+		},
+		"letter": {
+			"match": "H|CNOT|NOT|Sdg|Toffoli|Tdg|X|Y|Z|P|Rx|Ry|Rz|R|SqrtX|T|Measure|C",
+			"name": "keyword.letter"
+		}
+	}
+}

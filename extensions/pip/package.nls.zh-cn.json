@@ -1,0 +1,16 @@
+{
+    "pip-manager.view.title":"Pip管理",
+    "pip-manager.view.installed":"已安装",
+    "pip-manager.view.installed.wait":"等待加载完成 ... ",
+    "pip-manager.command.addPackage": "添加Python包",
+    "pip-manager.command.refreshPackage": "刷新列表",
+    "pip-manager.command.removePackage": "移除",
+    "pip-manager.command.updatePackage": "升级",
+    "pip-manager.command.packageDescription": "在PyPI中打开",
+    "pip-manager.command.copyPackageName": "复制包名",
+    "pip-manager.command.installRequirements": "安装这个文件中的python包",
+    "pip-manager.command.searchPackage": "从PyPI搜索包",
+    "pip-manager.config.source.description": "使用这个源安装python包",
+    "pip-manager.config.sourceCustom.description": "如果设置此选项，将覆盖source选项，请小心配置，不使用请置空",
+    "pip-manager.command.pickPackageVersion": "选择安装版本"
+}

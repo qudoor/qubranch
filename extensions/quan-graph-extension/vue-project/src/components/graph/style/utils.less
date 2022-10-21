@@ -1,0 +1,70 @@
+.buttonBackground {
+	background: #fff;
+	fill: #fff;
+}
+.search {
+	display: flex;
+	padding: 100px 50px;
+	user-select: none;
+	flex-wrap: wrap;
+}
+.search-svg {
+	cursor: grab;
+	&:active {
+		cursor: grabbing !important;
+	}
+}
+
+.grabbing {
+	cursor: grabbing;
+}
+.svg-gate {
+	cursor: pointer;
+}
+.svg-gate:active {
+	cursor: grabbing;
+}
+.active-quan {
+	position: fixed;
+	left: 0;
+	right: 0;
+	cursor: grabbing;
+}
+
+.action {
+	cursor: pointer;
+
+	.del-icon {
+		display: none;
+	}
+	&:hover {
+		.del-icon {
+			display: block;
+		}
+	}
+}
+.viewbox {
+	height: 400px;
+	margin-bottom: 20px;
+	overflow: scroll;
+}
+::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 3px; /*高宽分别对应横竖滚动条的尺寸*/
+	height: 10px;
+}
+::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 2px;
+	background-color: rgba(153, 153, 153, 0.6);
+}
+.quan-item {
+	.quan-pd {
+		display: none;
+	}
+	&:hover {
+		.quan-pd {
+			display: block;
+		}
+	}
+}

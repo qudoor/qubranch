@@ -1,0 +1,106 @@
+{
+	"nameShort": "QUBRANCH",
+	"nameLong": "QUBRANCH",
+	"applicationName": "qu-branch",
+	"dataFolderName": ".vscode-oss",
+	"win32MutexName": "qubranch",
+	"licenseName": "MIT",
+	"licenseUrl": "https://github.com/qudoor/qubranch/blob/main/LICENSE",
+	"serverGreeting": [],
+	"serverLicense": [],
+	"serverLicensePrompt": "",
+	"serverApplicationName": "code-server-oss",
+	"serverDataFolderName": ".vscode-server-oss",
+	"win32DirName": "QUBRANCH",
+	"win32NameVersion": "QUBRANCH",
+	"win32RegValueName": "QUBRANCH",
+	"win32SetupExeBasename": "QUBRANCHSetup",
+	"win32AppId": "{{E34003BB-9E10-4501-8C11-BE3FAA83F23F}",
+	"win32x64AppId": "{{D77B7E06-80BA-4137-BCF4-654B95CCEBC5}",
+	"win32arm64AppId": "{{D1ACE434-89C5-48D1-88D3-E2991DF85475}",
+	"win32UserAppId": "{{C6065F05-9603-4FC4-8101-B9781A25D88E}",
+	"win32x64UserAppId": "{{CC6B787D-37A0-49E8-AE24-8559A032BE0C}",
+	"win32arm64UserAppId": "{{3AEBF0C8-F733-4AD4-BADE-FDB816D53D7B}",
+	"win32AppUserModelId": "Microsoft.CodeOSS",
+	"win32ShellNameShort": "C&ode - QUBRANCH",
+	"darwinBundleIdentifier": "com.visualstudio.code.oss",
+	"linuxIconName": "com.visualstudio.code.oss",
+	"licenseFileName": "LICENSE",
+	"reportIssueUrl": "https://github.com/queco-quantum/qubranch/issues/new",
+	"urlProtocol": "code-oss",
+	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-webview.net/insider/93a2a2fa12dd3ae0629eec01c05a28cb60ac1c4b/out/vs/workbench/contrib/webview/browser/pre/",
+	"extensionAllowedProposedApi": [
+		"ms-vscode.vscode-js-profile-flame",
+		"ms-vscode.vscode-js-profile-table",
+		"GitHub.remotehub",
+		"GitHub.remotehub-insiders"
+	],
+	"extensionsGallery": {
+		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+		"itemUrl": "https://marketplace.visualstudio.com/items",
+		"resourceUrlTemplate": "https://{publisher}.vscode-unpkg.net/{publisher}/{name}/{version}/{path}",
+		"controlUrl": "https://az764295.vo.msecnd.net/extensions/marketplace.json",
+		"recommendationsUrl": "https://az764295.vo.msecnd.net/extensions/workspaceRecommendations.json.gz"
+	},
+	"builtInExtensions": [
+		{
+			"name": "ms-vscode.js-debug-companion",
+			"version": "1.0.15",
+			"repo": "https://github.com/microsoft/vscode-js-debug-companion",
+			"metadata": {
+				"id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.js-debug",
+			"version": "1.65.0",
+			"repo": "https://github.com/microsoft/vscode-js-debug",
+			"metadata": {
+				"id": "25629058-ddac-4e17-abba-74678e126c5d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.vscode-js-profile-table",
+			"version": "0.0.18",
+			"repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+			"metadata": {
+				"id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-python.python",
+			"version": "2021.12.1559732655",
+			"repo": "https://github.com/DonJayamanne/pythonVSCode"
+		},
+		{
+			"name": "vadimcn.vscode-lldb",
+			"version": "1.6.10"
+		},
+		{
+			"name": "ms-vscode.cpptools",
+			"version": "1.7.1"
+		}
+	]
+}

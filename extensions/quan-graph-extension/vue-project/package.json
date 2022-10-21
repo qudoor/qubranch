@@ -1,0 +1,44 @@
+{
+  "name": "quan-graph",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@types/vscode-webview": "^1.57.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "ant-design-vue": "^3.2.6",
+    "core-js": "^3.8.3",
+    "echarts": "^5.3.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.4.1",
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-markdown": "^2.0.0",
+    "eslint-plugin-no-explicit-type-exports": "^0.12.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.1.0",
+    "less": "^4.1.2",
+    "less-loader": "^5.0.0",
+    "typescript": "~4.5.5"
+  }
+}

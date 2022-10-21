@@ -1,0 +1,112 @@
+{
+  "name": "quan-graph",
+  "description": "量子可视化编程",
+  "version": "0.0.1",
+  "publisher": "qudoor-qubranch",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:qdoor",
+    "onFileSystem:memfs",
+    "onCommand:quan.init",
+    "onCommand:quan.start",
+    "onCommand:quan.boxsetting",
+    "onCommand:quan.pythonPath",
+    "onCommand:quan.pipInstall"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "quan.init",
+        "title": "初始化量子编程工作区",
+        "category": "quan"
+      },
+      {
+        "command": "quan.start",
+        "title": "量子编程可视化",
+        "category": "quan"
+      },
+      {
+        "command": "quan.boxsetting",
+        "title": "box的设置",
+        "category": "quan"
+      },
+      {
+        "command": "quan.pythonPath",
+        "title": "python解释器切换",
+        "category": "quan"
+      },
+      {
+        "command": "quan.pipInstall",
+        "title": "一键安装所需依赖",
+        "category": "quan"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "quan.init"
+        },
+        {
+          "command": "quan.start",
+          "when": " myExtension.hasMemfs==true"
+        },
+        {
+          "command": "quan.boxsetting"
+        },
+        {
+          "command": "quan.pythonPath"
+        },
+        {
+          "command": "quan.pipInstall"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "id": "qdoor",
+        "extensions": [
+          ".qdoor"
+        ],
+        "configuration": "./src/qdoor/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "qdoor",
+        "scopeName": "source.qdoor",
+        "path": "./src/qdoor/qdoor.tmLanguage.json"
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "extensionDependencies": [
+    "ms-python.python"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.47.0",
+    "@types/vscode-webview": "^1.57.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "eslint": "^7.21.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.1",
+    "typescript": "^4.5.5",
+    "@vscode/test-electron": "^2.1.2"
+  }
+}

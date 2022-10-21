@@ -1,0 +1,4 @@
+web-dist/*.js
+src/assets
+node_modules
+vue-project/*

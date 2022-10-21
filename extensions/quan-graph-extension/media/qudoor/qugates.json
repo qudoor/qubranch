@@ -1,0 +1,124 @@
+[
+	{
+		"label": "CNOT",
+		"insertText": "CNOT | (qr[0],qr[1])",
+		"detail": "CNOT"
+	},
+	{
+		"label": "H",
+		"insertText": "H | qr[0]",
+		"detail": "H"
+	},
+	{
+		"label": "NOT",
+		"insertText": "NOT | qr[0]",
+		"detail": "NOT"
+	},
+	{
+		"label": "Sdg",
+		"insertText": "Sdg | qr[0]",
+		"detail": "Sdg"
+	},
+	{
+		"label": "T",
+		"insertText": "T | qr[0]",
+		"detail": "T"
+	},
+	{
+		"label": "Tdg",
+		"insertText": "Tdg | qr[0]",
+		"detail": "Tdg"
+	},
+	{
+		"label": "X",
+		"insertText": "NOT | qr[0]",
+		"detail": "R,可增加控制位"
+	},
+	{
+		"label": "Y",
+		"insertText": "Y | qr[0]",
+		"detail": "Y,可增加控制位"
+	},
+	{
+		"label": "Z",
+		"insertText": "Z | qr[0]",
+		"detail": "Z,可增加控制位"
+	},
+	{
+		"label": "P(pi/2)",
+		"insertText": "P(pi/2) | qr[0]",
+		"detail": "P,可增加控制位及改变旋转角度"
+	},
+	{
+		"label": "R(pi/2)",
+		"insertText": "R(pi/2) | qr[0]",
+		"detail": "R,改变旋转角度"
+	},
+	{
+		"label": "Rx",
+		"insertText": "Rx | qr[0]",
+		"detail": "Rx,可增加控制位及改变旋转角度"
+	},
+	{
+		"label": "Ry",
+		"insertText": "Ry | qr[0]",
+		"detail": "Ry,可增加控制位及改变旋转角度"
+	},
+	{
+		"label": "Rz",
+		"insertText": "Rz | qr[0]",
+		"detail": "Rz,可增加控制位及改变旋转角度"
+	},
+	{
+		"label": "SqrtX",
+		"insertText": "SqrtX | qr[0]",
+		"detail": "SqrtX"
+	},
+	{
+		"label": "Toffoli",
+		"insertText": "Toffoli | qr[0]",
+		"detail": "Toffoli"
+	},
+	{
+		"label": "Measure",
+		"insertText": "Measure | qr[0]",
+		"detail": "测量"
+	},
+
+	{
+		"label": "C(X)",
+		"insertText": "C(X) | (qr[1],qr[0])",
+		"detail": "C(X)"
+	},
+	{
+		"label": "C(Y)",
+		"insertText": "C(Y) | (qr[1],qr[0])",
+		"detail": "C(Y)"
+	},
+	{
+		"label": "C(Z)",
+		"insertText": "C(Z) | (qr[1],qr[0])",
+		"detail": "C(Z)"
+	},
+	{
+		"label": "C(P)",
+		"insertText": "C(P) | (qr[1],qr[0])",
+		"detail": "C(P)"
+	},
+
+	{
+		"label": "C(Rx(pi/2))",
+		"insertText": "C(Rx(pi/2)) | (qr[1],qr[0])",
+		"detail": "C(Rx(pi/2)),可改变旋转角度"
+	},
+	{
+		"label": "C(Ry(pi/2))",
+		"insertText": "C(Ry(pi/2)) | (qr[1],qr[0])",
+		"detail": "C(Ry(pi/2)),可改变旋转角度"
+	},
+	{
+		"label": "C(Rz(pi/2))",
+		"insertText": "C(Rz(pi/2)) | (qr[1],qr[0])",
+		"detail": "C(Rz(pi/2)),可改变旋转角度"
+	}
+]
