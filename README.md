@@ -43,7 +43,7 @@ npm install --global windows-build-tools
 npm config set msvs_version 2019
 ```
 
-1.7 拉取 IDE 代码后，执行 yarn 安装依赖（安装依赖时若遇到请求超时可使用 yrm 切换至国内镜像，并且请保证 github 的连接通畅，若遇 electron 打包超时，可切换 electron 源 yarn config set ELECTRON_BUILDER_BINARIES_MIRROR http://npm.taobao.org/mirrors/electron-builder-binaries/
+1.7 拉取 QuBranch 代码后，执行 yarn 安装依赖（安装依赖时若遇到请求超时可使用 yrm 切换至国内镜像，并且请保证 github 的连接通畅，若遇 electron 打包超时，可切换 electron 源 yarn config set ELECTRON_BUILDER_BINARIES_MIRROR http://npm.taobao.org/mirrors/electron-builder-binaries/
 
 #### 2.下载与安装
 
@@ -51,7 +51,7 @@ QuBranch 安装前提是本地已安装好 Python 环境安装，当前软件包
 
 - 下载地址：[QuBranch 下载](http://developer.queco.cn/download/list)
 
-- 下载完成后，双击 QuIDESetup.exe，根据界面提示执行各步骤就可以完成安装。
+- 下载完成后，双击 QUBRANCH.exe，根据界面提示执行各步骤就可以完成安装。
 
 - QuTrunk 下载及安装详情见：[QuTrunk 下载及安装](http://developer.queco.cn/learn/doc/detail?id=12&childrenid=14)
 
