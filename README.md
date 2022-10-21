@@ -51,9 +51,11 @@ QuBranch 安装前提是本地已安装好 Python 环境安装，当前软件包
 
 - 下载地址：[QuBranch 下载](http://developer.queco.cn/download/list)
 
-- 下载完成后，双击 QUBRANCH.exe，根据界面提示执行各步骤就可以完成安装。
+- 下载完成后，双击 QuBranchSetup.exe，根据界面提示执行各步骤就可以完成安装。
 
 - QuTrunk 下载及安装详情见：[QuTrunk 下载及安装](http://developer.queco.cn/learn/doc/detail?id=12&childrenid=14)
+
+注：安装的时候不要安装在c盘，否则可能会出现权限问题
 
 ### **QuBranch日常开发及编译命令**
 ---
