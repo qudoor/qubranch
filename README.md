@@ -59,7 +59,8 @@ QuBranch 安装前提是本地已安装好 Python 环境安装，当前软件包
 ---
 
 - `yarn watch` 打开 QuBranch 桌面版的热更新、执行`./scripts/code.bat`（linux 上是`./scripts/code.sh`）启动项目。
-- `yarn gulp --tasks` 查看 gulp 的任务
+- `yarn compile`打包项目（在使用 gulp 打包 QuBranch 可执行文件时，必须先打包项目）。
+- `yarn gulp --tasks` 查看 gulp 的任务。
 
 ### **编程示例**
 ---
