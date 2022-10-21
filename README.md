@@ -19,7 +19,7 @@
 
 #### 1.环境搭建
 
-QuBranch 基于 VSCode 源码开发，环境搭建可参照 VSCode 的[环境搭建](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run-from-source)
+QuBranch 基于 VS Code 源码开发，环境搭建可参照 VSCode 的[环境搭建](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run-from-source)
 
 #### 2.下载与安装
 
