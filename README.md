@@ -19,6 +19,8 @@
 
 #### 1.环境搭建
 
+<font color="red">QuBranch 所需的 node 版本为 14.8.3</font>
+
 QuBranch 基于 VS Code 源码开发，环境搭建可参照 VSCode 的[环境搭建](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run-from-source)
 
 #### 2.下载与安装
@@ -39,7 +41,7 @@ QuBranch 安装前提是本地已安装好 Python 环境安装，当前软件包
 
 - `yarn watch` 打开 QuBranch 桌面版的热更新、执行`./scripts/code.bat`（linux 上是`./scripts/code.sh`）启动项目。
 - `yarn compile`打包项目（在使用 gulp 打包 QuBranch 可执行文件时，必须先打包项目）。
-- `yarn gulp --tasks` 查看 gulp 的任务。
+- `yarn gulp --tasks` 查看 gulp 的任务（使用\*\*-setup 打包 window 安装包时候，需要在打包完的文件夹下创建一个 tools 文件夹，文件夹中创建一个 index.txt 的空文件）。
 
 ### **编程示例**
 
